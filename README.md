@@ -1,4 +1,4 @@
-# [![](https://github.com/adamfisher/WaveApps.GraphQLBuilder/blob/main/WaveApps.GraphQLBuilder/wave_logo.png?raw=true)](#) WaveApps.GraphQLBuilder
+# [![](https://github.com/adamfisher/WaveApps.GraphQLBuilder/blob/main/WaveApps.GraphQLBuilder/wave_logo.png?raw=true)](https://www.waveapps.com/) WaveApps.GraphQLBuilder
 
 [![Nuget](https://img.shields.io/nuget/dt/WaveApps.GraphQLBuilder?color=blue&label=nuget&style=plastic)](https://www.nuget.org/packages/WaveApps.GraphQLBuilder)
 [![GitHub](https://img.shields.io/github/license/adamfisher/WaveApps.GraphQLBuilder?style=plastic)](https://github.com/adamfisher/WaveApps.GraphQLBuilder/blob/main/LICENSE)
