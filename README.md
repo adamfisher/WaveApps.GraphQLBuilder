@@ -3,7 +3,7 @@
 ![Nuget](https://img.shields.io/nuget/dt/WaveApps.GraphQLBuilder?color=blue&label=nuget&style=plastic)
 ![GitHub](https://img.shields.io/github/license/adamfisher/WaveApps.GraphQLBuilder?style=plastic)
 
-A C# GraphQL query builder for [waveapps.com](waveapps.com). Use this library to build strongly-typed queries in C# that can then be used with a GraphQL client to send commands to the Wave GraphQL API. This client was code generated against the schema definition and maps 100% of the API operations and models.
+A C# GraphQL query builder for [waveapps.com](https://www.waveapps.com/). Use this library to build strongly-typed queries in C# that can then be used with a GraphQL client to send commands to the Wave GraphQL API. This client was code generated against the schema definition and maps 100% of the API operations and models.
 
 ## Resources
 - [Wave Developer Portal](https://developer.waveapps.com/hc/en-us/categories/360001114072-Documentation)
