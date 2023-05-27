@@ -1,0 +1,51 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <LangVersion>9.0</LangVersion>
+
+    <PackageId>WaveApps.GraphQLBuilder</PackageId>
+    <Version>2019.08.29</Version>
+    <Authors>Adam Fisher</Authors>
+    <Description>A C# GraphQL query builder for waveapps.com.</Description>
+    <PackageProjectUrl>https://github.com/adamfisher/WaveApps.GraphQLBuilder</PackageProjectUrl>
+    <PackageIcon>wave_logo.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageTags>wave;wave apps; wave invoicing; wave payments</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+
+    <!-- GraphQL generator properties -->
+    <GraphQlClientGenerator_ServiceUrl>https://gql.waveapps.com/graphql/public</GraphQlClientGenerator_ServiceUrl>
+    <!-- GraphQlClientGenerator_Namespace is optional; if omitted the first compilation unit namespace will be used -->
+    <GraphQlClientGenerator_Namespace>$(RootNamespace)</GraphQlClientGenerator_Namespace>
+    <GraphQlClientGenerator_CustomClassMapping>Query:Wave</GraphQlClientGenerator_CustomClassMapping>
+    <!-- other GraphQL generator property values -->
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="GraphQlClientGenerator" Version="0.9.13" IncludeAssets="analyzers" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- AdditionalFiles and GraphQlClientGenerator_ServiceUrl are mutually exclusive -->
+    <!-- <AdditionalFiles Include="GqlSchemaTibberApi.gql.schema.json" CacheObjects="true" /> --> <!-- schema file name must end with ".gql.schema.json" -->
+  
+    <CompilerVisibleProperty Include="GraphQlClientGenerator_ServiceUrl" />
+    <CompilerVisibleProperty Include="GraphQlClientGenerator_Namespace" />
+    <CompilerVisibleProperty Include="GraphQlClientGenerator_CustomClassMapping" />
+    <!-- other configuration properties -->
+    <!--<CompilerVisibleProperty Include="GraphQlClientGenerator_{ConfigurationProperty}" />-->
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Update="wave_logo.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+</Project>
